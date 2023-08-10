@@ -1,15 +1,16 @@
 "use client";
-
-import { useEffect } from "react";
+import { grid } from "../../../styled-system/patterns";
 import { usePokemonStore } from "@/store/pokemon";
 
+import PokemonItem from "./pokemon-item";
+
 export default function PokemonGallery() {
-  const { pokemons } = usePokemonStore();
+  const { pokemonList } = usePokemonStore();
 
   return (
-    <div>
-      {pokemons.slice(0, 10).map((pokemon) => (
-        <div key={pokemon.name}>{pokemon.name}</div>
+    <div className={grid({ columns: 3 })}>
+      {pokemonList.slice(0, 10).map((pokemon, idx) => (
+        <PokemonItem key={idx} pokemon={pokemon} />
       ))}
     </div>
   );

@@ -7,14 +7,14 @@ import { usePokemonStore } from "@/store/pokemon";
 import StoreInitializer from "@/store/store-initializer";
 
 export default async function Home() {
-  const pokemons = await getPokemon();
-  usePokemonStore.setState({ pokemons: pokemons.data.results });
+  const pokemonRes = await getPokemon();
+  usePokemonStore.setState({ pokemonList: pokemonRes.data.results });
 
   return (
     <main>
-      <StoreInitializer pokemons={pokemons.data.results} />
+      <StoreInitializer pokemonList={pokemonRes.data.results} />
       <PokemonGallery />
-      <PokemonItem />
+      {/* <PokemonItem /> */}
     </main>
   );
 }

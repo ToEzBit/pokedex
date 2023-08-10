@@ -1,16 +1,17 @@
 "use client";
 import { useRef } from "react";
-import { usePokemonStore, Pokemon } from "@/store/pokemon";
+import { usePokemonStore } from "@/store/pokemon";
+import { Pokemon } from "@/types";
 
 export default function StoreInitializer({
-  pokemons,
+  pokemonList,
 }: {
-  pokemons: Pokemon[];
+  pokemonList: Pokemon[];
 }) {
   const initialized = useRef(false);
 
   if (!initialized.current) {
-    usePokemonStore.setState({ pokemons: pokemons });
+    usePokemonStore.setState({ pokemonList: pokemonList });
     initialized.current = true;
   }
 

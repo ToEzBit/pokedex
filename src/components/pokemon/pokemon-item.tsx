@@ -1,14 +1,5 @@
-import { usePokemonStore } from "@/store/pokemon";
+import { Pokemon } from "@/types";
 
-export default function PokemonItem() {
-  return (
-    <div style={{ backgroundColor: "red" }}>
-      {usePokemonStore
-        .getState()
-        .pokemons.slice(0, 10)
-        .map((pokemon) => (
-          <div key={pokemon.name}>{pokemon.name}</div>
-        ))}
-    </div>
-  );
+export default function PokemonItem({ pokemon }: { pokemon: Pokemon }) {
+  return <div style={{ backgroundColor: "red" }}>{pokemon.name}</div>;
 }
