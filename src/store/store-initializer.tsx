@@ -1,12 +1,12 @@
 "use client";
 import { useRef } from "react";
 import { usePokemonStore } from "@/store/pokemon";
-import { Pokemon } from "@/types";
+import { PokemonRes } from "@/types";
 
 export default function StoreInitializer({
   pokemonList,
 }: {
-  pokemonList: Pokemon[];
+  pokemonList: PokemonRes[];
 }) {
   const initialized = useRef(false);
 

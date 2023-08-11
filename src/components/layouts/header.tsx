@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { css } from "@styledSystem/css";
-import { HStack, VStack, Stack } from "@styledSystem/jsx";
+import { HStack, Stack } from "@styledSystem/jsx";
 
 import PokeballIcon from "@/assets/pokeball.svg";
 import { SearchBar } from "@/components/ui/";

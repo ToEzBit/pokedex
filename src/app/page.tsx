@@ -1,5 +1,5 @@
-import { css } from "../../styled-system/css";
-import { PokemonGallery, PokemonItem } from "@/components/pokemon";
+import { css } from "@styledSystem/css";
+import { PokemonGallery } from "@/components/pokemon";
 
 import { getPokemon } from "@/apis/pokemon";
 
@@ -11,10 +11,19 @@ export default async function Home() {
   usePokemonStore.setState({ pokemonList: pokemonRes.data.results });
 
   return (
-    <main>
+    <main
+      className={css({
+        bg: "grayScale.white",
+        mx: "4px",
+        py: "24px",
+        px: "12px",
+        shadow: "inner",
+        borderRadius: "8px",
+        lg: { mx: "8px", px: "24px", py: "48px" },
+      })}
+    >
       <StoreInitializer pokemonList={pokemonRes.data.results} />
       <PokemonGallery />
-      {/* <PokemonItem /> */}
     </main>
   );
 }

@@ -1,9 +1,9 @@
 import { create } from "zustand";
-import { Pokemon } from "@/types";
+import { PokemonRes } from "@/types";
 
 interface PokemonStore {
-  pokemonList: Pokemon[];
-  setPokemons: (pokemon: Pokemon[]) => void;
+  pokemonList: PokemonRes[];
+  setPokemons: (pokemon: PokemonRes[]) => void;
 }
 
 export const usePokemonStore = create<PokemonStore>()((set) => ({
