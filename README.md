@@ -1,34 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Pokedex WebApp
+
+Welcome to the Pokedex WebApp! This project was created as a part of my practice in Nextjs 13 and Panda CSS. The Pokedex WebApp allows you to explore a vast collection of Pokémon and learn more about their details.
+
+## Features
+
+- Interactive Interface: The Pokedex WebApp provides an intuitive and user-friendly interface for browsing through various Pokémon.
+
+- Search Functionality: You can search for specific Pokémon by name or ID, making it easy to find the information you're looking for.
+
+- Type Information: Each Pokémon is categorized by its primary and secondary types, helping you understand their strengths and weaknesses.
+
+- Detailed Information: Clicking on a Pokémon card reveals more detailed information about the selected Pokémon, including its height, weight, abilities, and more.
+
+- Responsive Design: The Pokedex WebApp is designed to work seamlessly across different devices, from desktops to tablets and smartphones.
+
+## Technologies Used
+
+- Next.js: Next.js is a powerful React framework that enhances the development experience by providing features like server-side rendering, routing, and more.
+
+- Panda CSS: Panda CSS is used for styling the Pokedex WebApp. It provides a lightweight and flexible CSS framework to create visually appealing and responsive designs.
+
+- API Integration: The Pokedex WebApp fetches Pokémon data from a reliable API to provide accurate and up-to-date information.
 
 ## Getting Started
 
-First, run the development server:
+- Clone this repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+git clone https://github.com/ToEzBit/pokedex.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Navigate to the project directory
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+cd pokedex
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Install dependencies
 
-## Learn More
+```bash
+pnpm i
+# or
+npm i
+```
 
-To learn more about Next.js, take a look at the following resources:
+- Build and start the app
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+pnpm dev
+# or
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Open your web browser and visit: http://localhost:3000
 
-## Deploy on Vercel
+## Credits
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Pokémon data and images are sourced from the [PokéAPI](https://pokeapi.co/).
+- Panda CSS framework by [PandaCSS](https://panda-css.com/).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Happy Pokémon exploring with the Pokedex WebApp! If you encounter any issues or have suggestions for improvement, please don't hesitate to open an issue or contact me. Enjoy your journey into the world of Pokémon! 🌟
